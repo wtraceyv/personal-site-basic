@@ -9,22 +9,18 @@ body {
   background-color: rgb(23, 23, 23);
 }
 
+header {
+  border-bottom: 1px solid;
+  margin-bottom: 20px;
+}
+
+/* specific to matrix banner on front page */
+
 .matrix-container {
   position: relative;
   margin: auto;
   width: 60%;
   height: 220px;
-}
-
-.wm-bordered {
-  background: grey;
-  border-radius: 10px;
-  border-style: solid;
-  border-width: 3px;
-}
-
-.wm-bordered:hover {
-  border-color: cornflowerblue;
 }
 
 #main-matrix {
@@ -42,6 +38,19 @@ body {
 
   font-family: monospace;
   font-size: 60px;
+}
+
+/* may be used anywhere */
+
+.wm-bordered {
+  background: grey;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.wm-bordered:hover {
+  border-color: cornflowerblue;
 }
 
 .main-page-right {
