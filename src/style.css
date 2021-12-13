@@ -9,10 +9,9 @@ body {
 }
 
 header {
-  border-bottom: 1px solid;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
+  background-color: transparent;
+  border-bottom: 2px solid;
+  border-color: bisque;
 }
 
 header a {
@@ -22,15 +21,33 @@ header a {
   text-decoration: none;
   margin-left: 15px;
   margin-right: 15px;
+  /* margin-bottom: 15px; */
   padding: 5px;
   border-radius: 10px;
   border-style: solid;
   border-width: 2px;
   border-color: transparent;
+
+  display: inline-flex;
 }
 
 header a:hover {
   border-color: cornflowerblue;
+  color: bisque;
+}
+
+.header-icon-bump {
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: bisque;
+  margin-right: 10px;
+}
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 228, 196, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 /* specific to matrix banner on front page */
@@ -38,6 +55,7 @@ header a:hover {
 .matrix-container {
   position: relative;
   margin: auto;
+  padding-top: 10px;
   width: 60%;
   height: 220px;
 }
@@ -49,7 +67,7 @@ header a:hover {
 
 .matrix-label {
   left:50%;
-  top:50%;
+  top: 70%;
   -webkit-transform: translate(-80%, -90%);
   -moz-transform: translate(-80%, -90%);
   transform: translate(-80%, -90%);
@@ -90,7 +108,6 @@ header a:hover {
 
 .art-pic-desktop {
   height: 300px;
-  
 }
 
 .art-pic-desktop img {
