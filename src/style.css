@@ -5,8 +5,26 @@ html {
 
 body {
   /* old color: 23, 23, 23 */
-  background-image: url(../pics/moon-cup.jpg);
 }
+
+#bg {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url('../pics/moon-cut.jpg');
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* header */
 
 header {
   background-color: transparent;
@@ -21,7 +39,6 @@ header a {
   text-decoration: none;
   margin-left: 15px;
   margin-right: 15px;
-  /* margin-bottom: 15px; */
   padding: 5px;
   border-radius: 10px;
   border-style: solid;
@@ -36,14 +53,13 @@ header a:hover {
   color: bisque;
 }
 
-.header-icon-bump {
-}
+
+/* customize the hamburger deal that appears when screen is small enough: */
 
 .custom-toggler.navbar-toggler {
   border-color: bisque;
   margin-right: 10px;
 }
-/* Setting the stroke to green using rgb values (0, 128, 0) */
 
 .custom-toggler .navbar-toggler-icon {
   background-image: url(
@@ -75,12 +91,14 @@ header a:hover {
 
   font-family: monospace;
   font-size: 60px;
+  color: bisque;
 }
 
 /* may be used anywhere */
 
 .wm-bordered {
-  background: grey;
+  color: bisque;
+  background: transparent;
   border-radius: 10px;
   border-style: solid;
   border-width: 3px;
@@ -104,15 +122,61 @@ header a:hover {
   height: 125px;
 }
 
-/* art page */
-
-.art-pic-desktop {
+.main-page-center {
+  margin-top: 35px;
+  margin-right: 20%;
+  margin-left: 20%;
   height: 300px;
 }
 
-.art-pic-desktop img {
-  height: 250px;
-  width: 250px;
-  float: right;
+/* art page */
+
+.art-pic-desktop {
+  height: 400px;
 }
 
+.art-pic-desktop img {
+  height: 300px;
+  width: 300px;
+}
+
+/* footer */
+
+footer {
+  background-color: transparent;
+  border-top: 2px solid;
+  border-color: bisque;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+footer a {
+  font-family: monospace;
+  font-size: xx-large;
+  color: bisque;
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 5px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent;
+
+  display: inline-flex;
+}
+
+footer a:hover {
+  border-color: cornflowerblue;
+  color: bisque;
+}
+
+
+.header-icon {
+  height: 35px;
+  width: 35px;
+  fill: bisque;
+}
