@@ -93,9 +93,9 @@ a:hover {
 .matrix-container {
   position: relative;
   margin: auto;
-  margin-top: 15px;
-  padding-top: 10px;
-  width: 60%;
+  margin-top: 1%;
+  padding-top: 1%;
+  width: 55%;
   height: 250px;
 }
 
@@ -132,31 +132,18 @@ a:hover {
   border-color: cornflowerblue;
 }
 
-.main-page-right {
-  margin-top: 35px;
-  margin-left: 35%;
-  margin-right: 20%;
-  height: 125px;
-}
-
-.main-page-left {
-  margin-top: 35px;
-  margin-right: 35%;
-  margin-left: 20%;
-  height: 125px;
-}
-
 .main-page-center {
-  margin-top: 35px;
+  margin-top: 3%;
   margin-right: 10%;
   margin-left: 10%;
   padding-left: 5%;
   padding-right: 5%;
-  height: 45vh;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 30vh;
 }
 
 p {
@@ -169,6 +156,7 @@ h2 {
   color: bisque;
   font-size: 32px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 /* footer */
@@ -216,13 +204,6 @@ footer a:hover {
   width: 300px;
 }
 
-/* little transition fix */
-@media only screen and (max-width: 800px) {
-  #home-programming-section {
-    height: 60vh;
-  }
-}
-
 /* mobile response tweaks */
 @media only screen and (max-width: 600px) {
   #bg {
@@ -248,11 +229,6 @@ footer a:hover {
   .main-page-center {
     margin-left: 10%;
     margin-right: 10%;
-    height: 85vh;
-  }
-
-  #home-programming-section {
-    height: 100vh;
   }
 
   .matrix-container {
