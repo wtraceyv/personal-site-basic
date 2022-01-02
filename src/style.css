@@ -1,5 +1,4 @@
 html {
-  color: bisque;
   font-family: monospace;
 }
 
@@ -9,23 +8,11 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-}
 
-#bg {
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  min-height: 100vh;
-  background-image: url('../pics/moon-cut.jpg');
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  /* background testing */
+  /* purp: #930F83 */
+  background: linear-gradient(0deg,#232323, #f0544c, #232323);
+  background-size: 100%;
 }
 
 .header-icon {
@@ -66,14 +53,10 @@ h2 {
 }
 
 audio {
-  border: 2px solid bisque;
+  border-color: transparent;
   border-radius: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-audio:hover {
-  border-color: #d653ef;
 }
 
 #home-programming-section {
@@ -243,7 +226,7 @@ a:hover {
 }
 
 .link-button {
-  background-color: rgb(23, 23, 23);
+  background-color: transparent;
   border-color: bisque;
   border-width: 2px;
   border-radius: 10px;
@@ -252,8 +235,6 @@ a:hover {
 .link-button:hover {
   border-color: cornflowerblue;
 }
-
-
 
 /* footer */
 
@@ -276,16 +257,7 @@ footer {
 }
 
 /* mobile response tweaks */
-@media only screen and (max-width: 600px) {
-  #bg {
-    background-image: none;
-    width: 0px;
-    height: 0px;
-  }
-
-  body {
-    background-color: rgb(23, 23, 23);
-  }
+@media only screen and (max-width: 1024px) {
 
   .header-icon {
     height: 32px;
@@ -308,11 +280,6 @@ footer {
 
   .wm-bordered {
     border-width: 1px;
-  }
-
-  audio {
-    border-radius: 0;
-    border: none;
   }
 
   .audio-with-title {
