@@ -15,7 +15,7 @@
 
 <body>
 	<!-- header -->
-	<header>
+	<header id="header-wrap">
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<a href="../src/index.html" class="navbar-brand">
 				<img src="../pics/test-d.png">
@@ -142,8 +142,6 @@
 		</div>
 	</div>
 
-	<script src="matrix.js"></script>
-
 	<!-- footer -->
 	<footer>
 		<div class="footer-row">
@@ -196,13 +194,6 @@
 		</div>
 	</footer>
 
-	<script>
-		// enabling tooltips from bootstrap
-		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-			return new bootstrap.Tooltip(tooltipTriggerEl)
-		})
-	</script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>
@@ -212,6 +203,21 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
+	<script src="matrix.js"></script>
+	<script>
+		// enabling tooltips from bootstrap
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+			return new bootstrap.Tooltip(tooltipTriggerEl)
+		})
+	</script>
+	<script>
+		// extra little JQuery snippet to deal with floating header nicely
+		// https://stackoverflow.com/questions/10975268/position-fixed-header-in-html
+		// get header component's height and add that plus some padding to the margin-top of relevant tops of pages
+		var headerHeight = $('#header-wrap').height();
+		$('#content').css('margin-top', (headerHeight + 40) + 'px');
+	</script>
 </body>
 
 </html>

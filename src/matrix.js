@@ -1,9 +1,9 @@
+// all matrix stuff
 const canvas = document.getElementById('main-matrix');
 const ctx = canvas.getContext('2d');
-
 const w = canvas.width = document.body.offsetWidth;
 const h = canvas.height = document.body.offsetHeight;
-const cols = Math.floor(w / 20) + 1;
+const cols = Math.floor(w / 10) + 1;
 const ypos = Array(cols).fill(0);
 
 ctx.fillStyle = '#000';
@@ -14,7 +14,7 @@ function matrix () {
   ctx.fillRect(0, 0, w, h);
   
   ctx.fillStyle = '#d653ef';
-  ctx.font = '15pt monospace';
+  ctx.font = '20pt monospace';
   
   ypos.forEach((y, ind) => {
     const text = String.fromCharCode(Math.random() * 128);

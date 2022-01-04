@@ -1,3 +1,10 @@
+/* just for reference so I can setup real colorscheme,
+    and maybe make that colorscheme easily changable */
+:root {
+  --primary-color: rgb(15, 157, 88);
+  --secondary-color: rgb(255, 255, 255);
+}
+
 html {
   font-family: monospace;
 }
@@ -66,9 +73,14 @@ audio {
 /* header */
 
 header {
-  background-color: transparent;
+  background-color: rgba(23, 23, 23, .94);
   border-bottom: 2px solid;
   border-color: bisque;
+
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
 }
 
 /* standardizing links */
@@ -114,10 +126,9 @@ a:hover {
 .matrix-container {
   position: relative;
   margin: auto;
-  margin-top: 1%;
   padding-top: 1%;
-  width: 55%;
-  height: 250px;
+  width: 45%;
+  height: 20vh;
 }
 
 #main-matrix {
@@ -135,7 +146,7 @@ a:hover {
   margin-top: 10px;
 
   font-family: monospace;
-  font-size: 60px;
+  font-size: 50px;
   color: bisque;
 }
 
@@ -155,8 +166,8 @@ a:hover {
 
 .main-page-center {
   margin-top: 3%;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 20%;
+  margin-left: 20%;
   padding-left: 5%;
   padding-right: 5%;
   
@@ -171,6 +182,10 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.h1-top-push-down {
+  margin-top: 6%;
 }
 
 .left-border-sep {
@@ -222,7 +237,7 @@ a:hover {
 }
 
 .about-info p {
-  max-width: 60%;
+  max-width: 80%;
 }
 
 .link-button {
@@ -265,17 +280,14 @@ footer {
     fill: bisque;
   }
 
-  .matrix-label {
-    font-size: 45px;
-  }
-
   .main-page-center {
     margin-left: 5%;
     margin-right: 5%;
   }
 
   .matrix-container {
-    width: 80%;
+   width: 65%; 
+   height: 40vh;
   }
 
   .wm-bordered {
