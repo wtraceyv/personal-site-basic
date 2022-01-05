@@ -3,6 +3,13 @@
 :root {
   --primary-color: rgb(15, 157, 88);
   --secondary-color: rgb(255, 255, 255);
+  --aliz: rgb(240, 84, 76);
+
+  --sexy-grey: rgb(23, 23, 23);
+  --sexy-grey-light: rgb(79, 79, 79);
+  --sexy-purple: rgb(214, 83, 293);
+  --sexy-greenblue: rgb(0, 171, 152);
+  --sexy-greenblue-dark: rgb(0, 110, 98);
 }
 
 html {
@@ -17,8 +24,8 @@ body {
   height: 100%;
 
   /* background testing */
-  /* purp: #930F83 */
-  background: linear-gradient(0deg,#232323, #f0544c, #232323);
+  /* purp: #930F83 aliz: #f0544c*/
+  background: var(--sexy-grey); 
   background-size: 100%;
 }
 
@@ -53,13 +60,14 @@ h1 {
 
 h2 {
   font-family: monospace;
-  color: bisque;
+  color: var(--sexy-greenblue);
   font-size: 32px;
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
 audio {
+  background-color: var(--sexy-grey-light);
   border-color: transparent;
   border-radius: 40px;
   margin-top: 20px;
@@ -105,7 +113,7 @@ a {
 }
 
 a:hover {
-  border-color: cornflowerblue;
+  border-color: var(--sexy-greenblue);
   color: bisque;
 }
 
@@ -161,13 +169,13 @@ a:hover {
 }
 
 .wm-bordered:hover {
-  border-color: cornflowerblue;
+  border-color: var(--sexy-purple);
 }
 
 .main-page-center {
   margin-top: 3%;
-  margin-right: 20%;
-  margin-left: 20%;
+  margin-right: 25%;
+  margin-left: 25%;
   padding-left: 5%;
   padding-right: 5%;
   
@@ -248,7 +256,7 @@ a:hover {
 }
 
 .link-button:hover {
-  border-color: cornflowerblue;
+  border-color: var(--sexy-greenblue);
 }
 
 /* footer */

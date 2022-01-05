@@ -1,4 +1,5 @@
-// all matrix stuff
+// adapted from a small codepen: https://codepen.io/gnsp/pen/vYBQZJm?css-preprocessor=scss
+
 const canvas = document.getElementById('main-matrix');
 const ctx = canvas.getContext('2d');
 const w = canvas.width = document.body.offsetWidth;
@@ -6,7 +7,7 @@ const h = canvas.height = document.body.offsetHeight;
 const cols = Math.floor(w / 10) + 1;
 const ypos = Array(cols).fill(0);
 
-ctx.fillStyle = '#000';
+ctx.fillStyle = '#006e62';
 ctx.fillRect(0, 0, w, h);
 
 function matrix () {
