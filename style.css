@@ -79,7 +79,6 @@ audio {
 }
 
 /* header */
-
 header {
   background-color: rgba(23, 23, 23, .94);
   border-bottom: 2px solid;
@@ -89,6 +88,10 @@ header {
   z-index: 1;
   top: 0;
   width: 100%;
+}
+
+.navbar-brand img {
+  max-height: 35px;
 }
 
 /* standardizing links */
@@ -117,6 +120,11 @@ a:hover {
   color: bisque;
 }
 
+/* navigators do not have to be huge */
+.nav-item a {
+  font-size: x-large;
+}
+
 /* customize the hamburger deal that appears when screen is small enough: */
 
 .custom-toggler.navbar-toggler {
@@ -136,7 +144,7 @@ a:hover {
   margin: auto;
   padding-top: 1%;
   width: 45%;
-  height: 20vh;
+  height: 30vh;
 }
 
 #main-matrix {
@@ -146,7 +154,7 @@ a:hover {
 
 .matrix-label {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -155,6 +163,20 @@ a:hover {
 
   font-family: monospace;
   font-size: 50px;
+  color: bisque;
+}
+
+.matrix-sub-label {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  -webkit-transform: translate(-50%, -30%);
+  -moz-transform: translate(-50%, -30%);
+  margin-top: 10px;
+
+  font-family: monospace;
+  font-size: 20px;
   color: bisque;
 }
 
@@ -279,6 +301,11 @@ footer {
   justify-content: center;
 }
 
+.footer-atr {
+  margin-top: 20px;
+  color: var(--sexy-grey-light);
+}
+
 /* mobile response tweaks */
 @media only screen and (max-width: 1024px) {
 
@@ -293,11 +320,20 @@ footer {
     margin-right: 5%;
   }
 
+  /* matrix banner fixes */
   .matrix-container {
-   width: 65%; 
-   height: 40vh;
+   width: 75%; 
+   height: 45vh;
   }
 
+  .matrix-label {
+    font-size: 40px;
+  }
+
+  .matrix-sub-label {
+    font-size: 18px;
+  }
+  
   .wm-bordered {
     border-width: 1px;
   }
