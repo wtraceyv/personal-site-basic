@@ -9,12 +9,12 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<!-- my style -->
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../style.css">
 	<!-- favicon setup -->
-	<link rel="apple-touch-icon" sizes="180x180" href="./pics/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./pics/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./pics/favicons/favicon-16x16.png">
-	<link rel="manifest" href="./pics/favicons/site.webmanifest">
+	<link rel="apple-touch-icon" sizes="180x180" href="../pics/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../pics/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../pics/favicons/favicon-16x16.png">
+	<link rel="manifest" href="../pics/favicons/site.webmanifest">
 
 	<title>Walter Tracey - Code</title>
 </head>
@@ -23,8 +23,8 @@
 	<!-- header -->
 	<header id="header-wrap">
 		<nav class="navbar navbar-expand-lg navbar-light">
-			<a href="./index.html" class="navbar-brand">
-				<img src="./pics/glitch-w-dark-draft.png">
+			<a href="../index.html" class="navbar-brand">
+				<img src="../pics/glitch-w-dark-draft.png">
 			</a>
 			<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
@@ -35,16 +35,16 @@
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 					<li class="nav-item">
-						<a href="./index.html">Home</a>
+						<a href="../index.html">Home</a>
 					</li>
 					<li class="nav-item">
-						<a href="./code.html">Programming</a>
+						<a href="../code.html">Programming</a>
 					</li>
 					<li class="nav-item">
-						<a href="./music.html">Music</a>
+						<a href="../music.html">Music</a>
 					</li>
 					<li class="nav-item">
-						<a href="./about.html">About/Contact</a>
+						<a href="../about.html">About/Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -52,66 +52,43 @@
 	</header>
 
 	<!-- content -->
-	<div class="pure-center" id="top-content" style="margin-bottom: 40px;">
-		<h2>Code Projects</h2>
+	<div class="pure-center" id="top-content">
+		<h1>Gravity Game</h1>
+	</div>
+	<div class="main-page-center" style="display: block; margin-top: 0; min-height: 5vh;">
+		<p>
+			A collaborative FPS in the Godot game engine. This has been a good opportunity to work
+			with someone else remotely, think about pipeline optimizations/version control, learn new
+			tools, and play more with multiplayer programming. I have implemented simple multiplayer
+			in the Unity engine, but at this point in Godot the only way is to start with RPC calls which
+			are much lower level than the replication system of Unity and other engines.
+		</p>
 	</div>
 
-	<div class="container">
+	<div class="container" style="margin-top: 40px;">
 		<div class="row" style="justify-content: space-around;">
-			<div class="col-md">
-				<a href="./projects/gravity.html" class="kill-normal-link-border pure-center-col">
-					<div class="program-preview-box program-preview-overlay-temp wm-bordered">
-						<p style="font-size: 35px; color: rgb(214, 83, 293);">Gravity</p>
-					</div>
-					<div>
-						<p class="program-preview-title">Gravity Game</p>
-						<p>A physics-aware, space-themed FPS in the Godot engine.</p>
-					</div>
-				</a>
+			<div class="col-sm-6">
+				<img src="../pics/gravity-game.png" class="program-screenshot wm-bordered">
 			</div>
-			<div class="col-md">
-				<a href="./projects/harmony.html" class="kill-normal-link-border pure-center-col">
-					<div class="program-preview-box program-preview-overlay-temp wm-bordered">
-						<p style="font-size: 35px; color: rgb(214, 83, 293);">Harmony V</p>
-					</div>
-					<div>
-						<p class="program-preview-title">Harmony V</p>
-						<p>A WIP monophonic harmonizer plugin.</p>
-					</div>
-				</a>
+			<div class="col-sm-6">
+				<img src="../pics/gravity-editor.png" class="program-screenshot wm-bordered">
 			</div>
-
 		</div>
 		<div class="row" style="justify-content: space-around;">
-			<div class="col-md">
-				<a href="./projects/dorkbash.html" class="kill-normal-link-border pure-center-col">
-					<div class="program-preview-box program-preview-overlay-temp wm-bordered" style="background-color: rgb(65, 65, 65);">
-						<img src="./pics/dorkbash.png" style="width: 100%;">
-					</div>
-					<div>
-						<p class="program-preview-title">dorkbash</p>
-						<p>A zork-like game written only in bash.</p>
-					</div>
-				</a>
+			<div class="col-sm-6">
+				<img src="../pics/gravity-game.png" class="program-screenshot wm-bordered">
 			</div>
-			<div class="col-md">
-				<a href="./projects/dorkbash.html" class="kill-normal-link-border pure-center-col">
-					<div class="program-preview-box wm-bordered">
-					</div>
-					<div>
-						<p class="program-preview-title">Bro just hire me</p>
-						<p>It's the latest trend.</p>
-					</div>
-				</a>
+			<div class="col-sm-6">
+				<img src="../pics/gravity-editor.png" class="program-screenshot wm-bordered">
 			</div>
-
 		</div>
 
-		<!-- end bootstraps -->
 	</div>
 
+	<!-- footer -->
 	<footer>
-		<div class="footer-row"> <a href="https://github.com/wtraceyv" data-bs-toggle="tooltip" data-bs-placement="bottom"
+		<div class="footer-row">
+			<a href="https://github.com/wtraceyv" data-bs-toggle="tooltip" data-bs-placement="bottom"
 				data-bs-animation="false" title="github">
 				<svg xmlns="http://www.w3.org/2000/svg" class="bi bi-github header-icon" viewBox="0 0 16 16">
 					<path
