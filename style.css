@@ -369,14 +369,6 @@ footer {
    height: 45vh;
   }
 
-  .matrix-label {
-    font-size: 40px;
-  }
-
-  .matrix-sub-label {
-    font-size: 18px;
-  }
-
   #gravity-screenshots-container {
     margin-top: 25px;
   }
@@ -385,5 +377,13 @@ footer {
 @media only screen and (max-width: 1200px) {
   .audio-with-title {
     flex-direction: column;
+  }
+
+  .matrix-label {
+    font-size: 40px;
+  }
+
+  .matrix-sub-label {
+    font-size: 18px;
   }
 }
