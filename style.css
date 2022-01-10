@@ -376,13 +376,14 @@ footer {
   .matrix-sub-label {
     font-size: 18px;
   }
-  
-  .audio-with-title {
-    flex-direction: column;
-  }
 
   #gravity-screenshots-container {
     margin-top: 25px;
   }
+}
 
+@media only screen and (max-width: 1200px) {
+  .audio-with-title {
+    flex-direction: column;
+  }
 }
