@@ -282,6 +282,17 @@ a:hover {
   align-items: center;
 }
 
+.section-footnote {
+  display: flex;
+  margin-left: 0;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.section-footnote p {
+  color: var(--sexy-purple);
+}
+
 /* art page */
 
 .art-pic-desktop img {
