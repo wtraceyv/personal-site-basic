@@ -1,0 +1,29 @@
+/* music */
+.audio-with-title {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-footnote {
+  display: flex;
+  margin-left: 0;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.section-footnote p {
+  color: var(--sexy-purple);
+}
+
+.left-border-sep {
+  border-left: 2px solid bisque;
+  padding: 20px;
+  margin-top: 20px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
